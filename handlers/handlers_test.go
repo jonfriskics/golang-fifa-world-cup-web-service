@@ -3,7 +3,7 @@ package handlers
 import (
 	"bytes"
 	"encoding/json"
-	"fifa-world-cup-web-service/data"
+	"golang-fifa-world-cup-web-service/data"
 	"net/http"
 	"net/http/httptest"
 	"path"
