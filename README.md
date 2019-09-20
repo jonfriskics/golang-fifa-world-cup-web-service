@@ -59,3 +59,17 @@ curl -i -X POST \
 ### POSTing with invalid method
 
 `curl -i -X PUT -d '{"country":"Russia", "year": 2030}' http://localhost:8000/winners`
+
+### Running with Docker
+
+To build the image from the Dockerfile, run:
+
+`docker build -t project-fifa-world-cup .`
+
+To start an interactive shell, run:
+
+`docker run -it --rm --name run-fifa project-fifa-world-cup`
+
+From inside the shell, run the tests with:
+
+`go test handlers/*`
